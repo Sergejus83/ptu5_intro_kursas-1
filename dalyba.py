@@ -22,3 +22,7 @@ def dalyba(a, b):
 print(dalyba(7, 0))
 print(dalyba(7, 3))
 print(daugyba(3, 5))
+
+import os, psutil
+process = psutil.Process(os.getpid())
+print(process.memory_info())
