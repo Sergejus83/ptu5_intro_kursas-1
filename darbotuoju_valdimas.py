@@ -1,6 +1,7 @@
 from datetime import date, datetime
 from darbotuoju_modelis import Darbuotojai, engine
 from sqlalchemy.orm import sessionmaker
+from tkinter import Tk, Frame, Label, Button, Entry, Listbox, SINGLE, END, RIGHT, LEFT, Y, PhotoImage
 session = sessionmaker(bind=engine)()
 
 def print_employee():
@@ -101,5 +102,4 @@ while True:
         delete_employee()
     else:
         print(" - dar karta - ")
-
 
